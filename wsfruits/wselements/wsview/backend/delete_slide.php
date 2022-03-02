@@ -18,7 +18,7 @@ confirm($query);
 
 
 set_message("Slide Deleted");
-redirect("index.php?slides");
+redirect("..\..\..\public\admin\index.php?slides");
 
 
 } else {

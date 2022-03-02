@@ -9,7 +9,7 @@
     <meta name="description" content="The ecommerce website was created in Dec 2020">
     <meta name="author" content="Ashley Tendai Muzuro">
 
-    <title> Muzuro Ecommerce | Admin </title>
+    <title> Wang && Su | Admin </title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -31,13 +31,16 @@
     <![endif]-->
 
 </head>
+
 <body>
     <div id="wrapper">
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
-           <!--top items-->
-           <?php include(TEMPLATE_BACK.'\top_nav_admin.php');  ?>
-            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <?php include(TEMPLATE_BACK.'\side_nav_admin.php');  ?>
+            <!--top items-->
+            <?php include(TEMPLATE_BACK . '\top_nav_admin.php');  ?>
+                    <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <?php include(TEMPLATE_BACK . '\side_nav_admin.php');  ?>
         </nav>
+
+

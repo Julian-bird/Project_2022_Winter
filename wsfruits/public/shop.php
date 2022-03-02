@@ -7,7 +7,7 @@
         <!-- Jumbotron Header -->
         <header>
             <h1>
-                All Products Market
+                All Wang && Su Fresh Products
             </h1>
         </header>
         <!-- Title -->
