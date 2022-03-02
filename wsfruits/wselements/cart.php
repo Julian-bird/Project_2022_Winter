@@ -78,9 +78,9 @@ $product = <<<DELIMETER
   <td>{$row['product_title']}<br>
     <img width='100' src = '../wselements/{$product_photo}'>
   </td>
-  <td>&#165;{$row['product_price']}</td>
+  <td>&#36;{$row['product_price']}</td>
   <td>{$value}</td>
-  <td>&#165;{$sub}</td>
+  <td>&#36;{$sub}</td>
   <td><a class='btn btn-warning' href="..\wselements\cart.php?remove={$row['product_id']}"><span class='glyphicon glyphicon-minus'></span></a>   <a class='btn btn-success' href=" ..\wselements\cart.php?add={$row['product_id']}"><span class='glyphicon glyphicon-plus'></span></a>
 <a class='btn btn-danger' href=" ..\wselements\cart.php?delete={$row['product_id']}"><span class='glyphicon glyphicon-remove'></span></a></td>
   </tr>
@@ -112,7 +112,7 @@ function show_paypal(){
 if(isset($_SESSION['item_quantity'])){
 $paypal_button = <<<DELIMETER
 
-<input type="image" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif"  alt="PayPal - The safer, easier way to pay online">
+<input class="buyout" type="button" name="submit" value="Check Out" >
 
 DELIMETER;
 return $paypal_button;

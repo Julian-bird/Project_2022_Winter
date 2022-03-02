@@ -1,6 +1,9 @@
 
 <?php require_once('..\wselements\config.php'); ?>
 <?php include(TEMPLATE_FRONT.DS.'header.php'); ?>
+
+<div class="block" style="width: 100%; height: 50px;"> </div>
+
     <!-- Page Content -->
 <div class="container">
 
@@ -39,7 +42,7 @@ while ($row=fetch_array($query)):
     <div class="caption-full">
         <h4><a href="#"><?php echo $row['product_title']?></a> </h4>
         <hr>
-        <h4 class="">&#165;<?php echo $row['product_price']?></h4>
+        <h4 class="">&#36;<?php echo $row['product_price']?></h4>
 
     <div class="ratings">
      
@@ -84,8 +87,8 @@ while ($row=fetch_array($query)):
 
   <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Description</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Reviews</a></li>
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Product Overview</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Customer Reviews</a></li>
 
   </ul>
 

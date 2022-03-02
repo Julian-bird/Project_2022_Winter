@@ -36,7 +36,7 @@ body {
 }
 
 .thumbnail {
-    padding: 0;
+    padding: 10px;
 }
 
 .thumbnail .caption-full {
@@ -59,4 +59,8 @@ footer {
   }
   .social {
     padding-bottom: 5%;
+  }
+
+  .buyout{
+      background-color: gold;
   }

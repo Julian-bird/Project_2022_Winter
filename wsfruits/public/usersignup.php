@@ -1,7 +1,5 @@
 <?php require_once('..\wselements\config.php'); ?>
-<?php //include(TEMPLATE_FRONT.DS.'header.php'); 
-?>
-<?php require '../wselements/wsview/frontend/header.php'; ?>
+<?php include(TEMPLATE_FRONT.DS.'header.php'); ?>
 
 
 <div class="container-fluid center-align sign">
@@ -33,10 +31,10 @@
                                         <div class="input-field col s6">
                                             <select class="icons" name="country">
                                                 <option value=""  disabled selected>Choose your country</option>
-                                                <option value="India">India</option>
-                                                <option value="Morocco">Morocco</option>
-                                                <option value="Egypt">Egypt</option>
-                                                <option value="Algeria">Algeria</option>
+                                                <option value="India">Canada</option>
+                                                <option value="Morocco">US</option>
+                                                <option value="Egypt">China</option>
+                                                <option value="Algeria">Japan</option>
                                             </select>
                                             <label>Country</label>
                                         </div>

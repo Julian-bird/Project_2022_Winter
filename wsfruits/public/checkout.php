@@ -36,10 +36,10 @@
 
          </tbody>
        </table>
-       <div id="paypal-payment-button">
+       <!-- <div id="paypal-payment-button">
 
        </div>
-       <script src="https://www.paypal.com/sdk/js?client-id=AWxwoQjx9AGZIjNMQNynlagNl6-WT5AKQhb6ZwJXEF830-k9cusmnkC-50pH_H_RccKLyQLE0rA7nMGi&disable-funding=credit,card"></script>
+       <script src="https://www.paypal.com/sdk/js?client-id=AWxwoQjx9AGZIjNMQNynlagNl6-WT5AKQhb6ZwJXEF830-k9cusmnkC-50pH_H_RccKLyQLE0rA7nMGi&disable-funding=credit,card"></script> -->
 
        <?php echo show_paypal(); ?>
      </form>
@@ -63,7 +63,7 @@
 
          <tr class="order-total">
            <th>Order Total</th>
-           <td><strong><span class="amount">&#165;<?php
+           <td><strong><span class="amount">&#36;<?php
                                                   echo isset($_SESSION['item_total']) ? $_SESSION['item_total'] : $_SESSION['item_total'] = "0"; ?>
                  <script src="payment_button.js"></script>
 
