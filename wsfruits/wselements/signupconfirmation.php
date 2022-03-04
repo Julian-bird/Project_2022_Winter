@@ -23,7 +23,7 @@ if (isset($_POST['signup'])) {
   address,
   city,
   country,
-  role) VALUES ('$email',
+  user_photo) VALUES ('$email',
   '$firstname',
   '$lastname',
   '$encryptedpass',

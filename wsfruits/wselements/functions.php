@@ -298,10 +298,7 @@ function user_name()
 
 
 
-//#########################################
 
-//#######################################
-//#########################################
 
 //#######################################
 //the function to send the messages from the contact us page to admin
@@ -698,4 +695,19 @@ DELIMETER;
     }
 }
 
+
+
+// show categories title
+
+function show_category()
+{
+    $query = query("SELECT * FROM categories WHERE cat_id=" . escape_string($_GET['id']) . " ");
+ 
+    confirm($query);
+    $row = fetch_array($query);
+        $cat_title = $row['cat_title'];
+       
+        echo  $cat_title;
+    
+}
 ?>

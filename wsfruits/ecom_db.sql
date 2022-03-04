@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 01, 2022 at 02:42 AM
+-- Generation Time: Mar 03, 2022 at 04:36 AM
 -- Server version: 5.7.36
 -- PHP Version: 7.4.26
 
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `categories` (
   `cat_id` int(11) NOT NULL AUTO_INCREMENT,
   `cat_title` varchar(255) NOT NULL,
   PRIMARY KEY (`cat_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `categories`
@@ -54,12 +54,23 @@ INSERT INTO `categories` (`cat_id`, `cat_title`) VALUES
 DROP TABLE IF EXISTS `clients`;
 CREATE TABLE IF NOT EXISTS `clients` (
   `user_id` int(11) NOT NULL AUTO_INCREMENT,
-  `username` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
+  `firstname` varchar(40) NOT NULL,
+  `lastname` varchar(40) NOT NULL,
   `password` char(32) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `city` varchar(25) NOT NULL,
+  `country` varchar(40) NOT NULL,
   `user_photo` text NOT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `clients`
+--
+
+INSERT INTO `clients` (`user_id`, `email`, `firstname`, `lastname`, `password`, `address`, `city`, `country`, `user_photo`) VALUES
+(1, 'hongqingwang@gmail.com', 'Hongqing', 'Wang', 'e10adc3949ba59abbe56e057f20f883e', '1234 van daw av', 'Montreal', 'India', 'client');
 
 -- --------------------------------------------------------
 
@@ -139,14 +150,14 @@ CREATE TABLE IF NOT EXISTS `products` (
   `short_desc` text NOT NULL,
   `product_image` varchar(255) NOT NULL,
   PRIMARY KEY (`product_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=264 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `products`
 --
 
 INSERT INTO `products` (`product_id`, `product_title`, `product_category_id`, `product_price`, `product_quantity`, `product_description`, `short_desc`, `product_image`) VALUES
-(1, 'Cherries', 1, 3.56, 50, 'You won\'t find cherries this big and sweet in your local stores! Grown only in Idaho, these crisp gems are sure to be the best you\'ve ever tasted. Their season is short, so don\'t miss out!', 'Cherries', 'product-1-1.jpg'),
+(1, 'Cherries', 1, 3.56, 2, 'You won\'t find cherries this big and sweet in your local stores! Grown only in Idaho, these crisp gems are sure to be the best you\'ve ever tasted. Their season is short, so don\'t miss out!', 'Cherries', 'product-1-1.jpg'),
 (2, 'Pineapple, Golden Jumbo', 1, 3.47, 54, '• This Jumbo Pineapple is a great addition to smoothies\n• Sweet, and Juicy\n• Rich in vitamins, enzymes and antioxidant', 'Pineapple, Golden Jumbo', 'product-1-2.jpg'),
 (3, 'Banana', 1, 0.3, 250, 'Soft, sweet and delicious, the banana is a popular choice for breakfast, snacks or any time of the day. The vibrant yellow peel provides natural protection while storing, and is a great indicator of when the fruit is ready to eat!', 'Banana', 'product-1-3.jpg'),
 (4, 'litchi', 1, 9.8, 65, 'Lychee are tropical fruits native to China. The heart-shaped fruits have thin, tough, inedible rinds that peel off to reveal juicy, whitish flesh surrounding hard, brown pits.', 'litchi', 'product-1-4.jpg'),
@@ -255,21 +266,21 @@ CREATE TABLE IF NOT EXISTS `slides` (
   `slide_title` varchar(255) NOT NULL,
   `slide_image` text NOT NULL,
   PRIMARY KEY (`slide_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `slides`
 --
 
 INSERT INTO `slides` (`slide_id`, `slide_title`, `slide_image`) VALUES
-(10, 'Passer 01', 'slider_1.jpg'),
-(11, 'Passer 02', 'slider_2.jpg'),
-(12, 'Passer 03', 'slider_3.jpg'),
-(13, 'Passer 04', 'slider_4.jpg'),
-(14, 'Passer 05', 'slider_5.jpg'),
-(15, 'Passer 06', 'slider_6.jpg'),
-(19, 'Passer 07', 'slider_10.png'),
-(20, 'Passer 08', 'slider_11.png');
+(24, 'pass_01', 'slider_1.jpg'),
+(25, 'pass_02', 'slider_2.jpg'),
+(26, 'pass_03', 'slider_3.jpg'),
+(27, 'pass_04', 'slider_4.jpg'),
+(28, 'pass_05', 'slider_5.jpg'),
+(29, 'pass_06', 'slider_6.jpg'),
+(30, 'pass_07', 'slider_7.jpg'),
+(34, 'pass_08', 'slider_8.jpg');
 
 -- --------------------------------------------------------
 
@@ -285,7 +296,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `password` char(32) NOT NULL,
   `user_photo` text NOT NULL,
   PRIMARY KEY (`user_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `users`
@@ -293,8 +304,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`user_id`, `username`, `email`, `password`, `user_photo`) VALUES
 (1, 'tendai', 'tendai@gmail.com', '1234', ''),
-(2, 'ashley', 'ashley@support.com', '1234', ''),
-(4, 'ashy', 'tendai@business.com', '1234', '');
+(2, 'ashley', 'ashley@support.com', '1234', '');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
