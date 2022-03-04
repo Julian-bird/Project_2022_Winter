@@ -1,7 +1,7 @@
 <?php add_user(); ?>
 <h1 class="page-header">
     Add User
-    <small>Page</small>
+    
 </h1>
 
 <div class="col-md-6 user_image_box">
@@ -20,7 +20,7 @@
 
         <div class="form-group">
 
-            <input type="file" name="file">
+            <input type="file" name="file" >
 
         </div>
 
@@ -38,18 +38,7 @@
 
         </div>
 
-        <!-- 
-      <div class="form-group">
-          <label for="first name">First Name</label>
-      <input type="text" name="first_name" class="form-control"   >
-         
-     </div> -->
-        <!-- 
-      <div class="form-group">
-          <label for="last name">Last Name</label>
-      <input type="text" name="last_name" class="form-control"   >
-         
-     </div> -->
+
 
 
         <div class="form-group">
