@@ -31,10 +31,10 @@
                                         <div class="input-field col s6">
                                             <select class="icons" name="country">
                                                 <option value=""  disabled selected>Choose your country</option>
-                                                <option value="India">Canada</option>
-                                                <option value="Morocco">US</option>
-                                                <option value="Egypt">China</option>
-                                                <option value="Algeria">Japan</option>
+                                                <option value="Canada">Canada</option>
+                                                <option value="US">US</option>
+                                                <option value="China">China</option>
+                                                <option value="Japan">Japan</option>
                                             </select>
                                             <label>Country</label>
                                         </div>
